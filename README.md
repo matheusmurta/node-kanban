@@ -1,1 +1,1 @@
- RESTful API with Express, PostgreSQL, Sequelize and Node
+ RESTful API Kanban App with Express, PostgreSQL, Sequelize and Node
