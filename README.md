@@ -1,1 +1,1 @@
- RESTful API with Express, PostgreSQL, and Node
+ RESTful API with Express, PostgreSQL, Sequelize and Node
