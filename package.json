@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "migrate-up":"sequelize db:migrate", 
+    "migrate-down":"sequelize db:migrate:undo:all", 
     "start": "nodemon --exec babel-node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
