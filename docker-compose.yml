@@ -1,0 +1,24 @@
+version: '3'
+services:
+  db:
+    image: "postgres:12.1"
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pgData:/var/lib/psotgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 
+      POSTGRES_DB: pg_development
+
+  app:
+    working_dir: /node-kanban
+    entrypoint: ["/bin/bash", "./entrypoint.sh"]
+    image: node:13.2.0
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/node-kanban
+    environment:
+      DB_HOST: db
+
