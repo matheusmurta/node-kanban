@@ -11,7 +11,7 @@ npm install
 sequelize db:migrate
 npm start 
 
-### 3 - Check the Docs Api for more details  
+### 3 - After run project locally you can check the Docs Api for more details  
 http://localhost:3000/docs/
 
 ### Or use Quick postman Docs
