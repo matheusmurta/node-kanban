@@ -15,6 +15,11 @@ class Boards {
         boardData
       }))
   }
+  static list(req, res) {
+    return Board
+      .findAll()
+      .then(boards => res.status(200).send(boards));
+  }
 }
 
 export default Boards;

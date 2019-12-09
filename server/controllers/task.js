@@ -23,6 +23,16 @@ class Tasks {
       .findAll()
       .then(tasks => res.status(200).send(tasks));
   }
+  static listByBoardID(req, res) {
+    const { boardId } = req.params
+    return Task
+      .findAll({
+        where: {
+          boardId: boardId
+        }
+      })
+      .then(tasks => res.status(200).send(tasks));
+  }
   static modify(req, res) {
     const { name, description, project_stage } = req.body
     return Task
@@ -65,6 +75,8 @@ class Tasks {
       })
       .catch(error => res.status(400).send(error))
   }
+
+  
 }
 
 export default Tasks

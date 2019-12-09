@@ -10,7 +10,43 @@ export default (app) => {
         message: 'Welcome to the kanban API!',
     }));
 
+    
+    /**
+     * @swagger
+     * path:
+     *  /boards/:
+     *    get:
+     *      summary: Get all tasks by boardid
+     *      tags: [Boards]
+     *      responses:
+     *        "200":
+     *          description: An array of tasks
+     *          content:
+     *            application/json:
+     *              schema:
+     *                $ref: '#/components/schemas/Task'
+     */
+    app.get('/api/tasks/listbyboard/:boardId', Tasks.listByBoardID);
+
+
     app.post('/api/boards', Boards.signUp);
+
+     /**
+     * @swagger
+     * path:
+     *  /boards/:
+     *    get:
+     *      summary: Get all boards
+     *      tags: [Boards]
+     *      responses:
+     *        "200":
+     *          description: An array of boards
+     *          content:
+     *            application/json:
+     *              schema:
+     *                $ref: '#/components/schemas/Task'
+     */
+    app.get('/api/boards', Boards.list);
 
     /**
      * @swagger
