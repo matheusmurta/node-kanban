@@ -8,7 +8,7 @@ createdb kanban
 
 ### 2 - Run in project folder 
 npm install
-npx sequelize db:migrate
+sequelize db:migrate
 npm start 
 
 ### 3 - Check the Docs Api for more details  
