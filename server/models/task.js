@@ -7,36 +7,31 @@
  *      Task:
  *        type: object
  *        required:
- *          - title
+ *          - name
  *        properties:
- *          title:
+ *          name:
  *            type: string
  *            description: set an objective title for task.
- *          stage:
- *            type: string
+ *          project_stage:
+ *            type: interger
  *            description: task stage, such as todo or done.
  *          description:
  *            type: string 
  *            description: describe the complete task with details.
- *          priority:
- *            type: string
- *            description: number representing the priority level (the lower the number the higher the priority).
  *        example:
- *           title: UX Research
- *           stage: backlog
+ *           name: UX Research
  *           description: Designer team meeting with client
- *           priority: 1
+ *           project_stage: 1
  */
 
 module.exports = (sequelize, DataTypes) => {
   const Task = sequelize.define('Task', {
-    title: DataTypes.STRING,
-    stage: DataTypes.STRING,
+    name: DataTypes.STRING,
     description: DataTypes.STRING,
-    priority: DataTypes.INTEGER,
+    project_stage: DataTypes.INTEGER,
     boardId: DataTypes.INTEGER
   }, {});
-  Task.associate = function (models) {
+  Task.associate = function(models) {
     Task.belongsTo(models.Board, {
       foreignKey: 'boardId',
       onDelete: 'CASCADE'

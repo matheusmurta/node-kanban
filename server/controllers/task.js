@@ -4,18 +4,17 @@ const { Task } = model;
 
 class Tasks {
   static create(req, res) {
-    const { title, stage, description, priority } = req.body
+    const { name, description, project_stage } = req.body
     const { boardId } = req.params
     return Task
       .create({
-        title,
-        stage,
+        name,
         description,
-        priority,
+        project_stage,
         boardId
       })
       .then(task => res.status(201).send({
-        message: `Your Task with the title ${title} has been created successfully `,
+        message: `Your Task with the name ${name} has been created successfully `,
         task
       }))
   }
@@ -25,24 +24,22 @@ class Tasks {
       .then(tasks => res.status(200).send(tasks));
   }
   static modify(req, res) {
-    const { title, stage, description, priority } = req.body
+    const { name, description, project_stage } = req.body
     return Task
       .findByPk(req.params.taskId)
       .then((task) => {
         task.update({
-          title: title || task.title,
-          stage: stage || task.stage,
+          name: name || task.name,
           description: description || task.description,
-          priority: priority || task.priority
+          project_stage: project_stage || task.project_stage
         })
           .then((updatedTask) => {
             res.status(200).send({
               message: 'Task updated successfully',
               data: {
-                title: title || updatedTask.title,
-                stage: stage || updatedTask.stage,
+                name: name || updatedTask.name,
                 description: description || updatedTask.description,
-                priority: priority || updatedTask.priority
+                project_stage: project_stage || updatedTask.project_stage
               }
             })
           })
