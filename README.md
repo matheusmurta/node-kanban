@@ -4,7 +4,7 @@ RESTful Simple API Kanban App with Express, PostgreSQL, Sequelize Node, Docker a
 This application required, Node.js and PostgreSQL.
 
 ### Clone this repository
-git clone https://github.com/matheusmurta/react-kanban.git
+git clone https://github.com/matheusmurta/node-kanban.git
 
 ### 1 - Create postgres database with command or create using PgAdmin 
 createdb kanban
