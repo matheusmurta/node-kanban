@@ -50,8 +50,9 @@ Some features are not yet available, check issues yet
 ## Boards
 ```
 GET http://127.0.0.1:3001/api/boards
-Lista todos dos boards 
+Lista todos dos boards
 
+Criar um novo Board
 POST http://127.0.0.1:3000/api/boards
 {
   "name": "Meu primeiro Board"
@@ -60,21 +61,27 @@ POST http://127.0.0.1:3000/api/boards
 Listar detalhes de um Board 
 GET http://127.0.0.1:3000/api/tasks/listbyboard/:boardId
 
-LISTAR Todos os boards 
-GET http://127.0.0.1:3000/api/boards
 ```
 ## Tasks 
 ```
-LISTAR TODAS 
+Lista todas as tarefas
 GET http://127.0.0.1:3001/api/tasks/ 
 
-LISTAR TODAS Por BoardID 
+Lista todas Por BoardID 
 GET http://127.0.0.1:3001/api/tasks/listbyboard/{BoardID}
 
-DELETAR 
+Inserir  
+POST http://127.0.0.1:3000/api/boards/1/tasks
+ {
+  "name": "Protipagem",
+  "description": "Prototipo de baixa fidelidade.",
+  "project_stage": 1
+ }
+
+Deletar 
 DELETE http://127.0.0.1:3000/api/tasks/{taskID}
 
-ATUALIZAR 
+Atualizar 
 PUT http://127.0.0.1:3000/api/tasks/{taskID}
 {
   "name": "Protipagem",
@@ -82,11 +89,5 @@ PUT http://127.0.0.1:3000/api/tasks/{taskID}
   "project_stage": 1
  }
  
-INSERIR 
-POST http://127.0.0.1:3000/api/boards/1/tasks
- {
-  "name": "Protipagem",
-  "description": "Prototipo de baixa fidelidade.",
-  "project_stage": 1
- }
+
 ```
