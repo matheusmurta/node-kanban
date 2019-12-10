@@ -84,8 +84,8 @@ DELETE http://127.0.0.1:3000/api/tasks/{taskID}
 Atualizar 
 PUT http://127.0.0.1:3000/api/tasks/{taskID}
 {
-  "name": "Protipagem",
-  "description": "Prototipo de baixa fidelidade.",
+  "name": "Novo nome",
+  "description": "Nova descricao.",
   "project_stage": 1
  }
  
