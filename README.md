@@ -1,4 +1,4 @@
-RESTful Simple API Kanban App with Express, PostgreSQL, Sequelize Node, Docker and Heroku.
+RESTful Simple API Kanban App with Express, PostgreSQL, Sequelize Node
 
 ### Requeriments
 This application required, Node.js and PostgreSQL.
