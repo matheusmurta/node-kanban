@@ -9,7 +9,6 @@ export default (app) => {
     app.get('/api', (req, res) => res.status(200).send({
         message: 'Welcome to the kanban API!',
     }));
-
     
     /**
      * @swagger
@@ -42,11 +41,32 @@ export default (app) => {
      *          content:
      *            application/json:
      *              schema:
-     *                $ref: '#/components/schemas/Task'
+     *                $ref: '#/components/schemas/Board'
      */
     app.get('/api/boards/:boardId', Boards.listByID);
 
 
+     /**
+     * @swagger
+     * path:
+     *  /boards/:
+     *    post:
+     *      summary: Create a new board
+     *      tags: [Boards]
+     *      requestBody:
+     *        required: true
+     *        content:
+     *          application/json:
+     *            schema:
+     *              $ref: '#/components/schemas/Boards'
+     *      responses:
+     *        "200":
+     *          description: A board schema
+     *          content:
+     *            application/json:
+     *              schema:
+     *                $ref: '#/components/schemas/Board'
+     */
     app.post('/api/boards', Boards.signUp);
 
      /**
