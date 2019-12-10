@@ -12,10 +12,16 @@ npm install
 sequelize db:migrate
 npm start 
 ```
+### 3 - you can get there quickly if it works by going to http://localhost:3001/ and seeing this message
+```sh
+{"message":"Kanban App"}
+```
 
-
-### 3 - After run project locally you can check the Docs Api for more details  
+### 4 - After run project locally you can check the Docs Api for more details  
 http://localhost:3001/docs/
+
+### 5 Now just Run the Front End App
+https://github.com/matheusmurta/react-kanban
 
 ### Or use Quick postman Docs
 https://documenter.getpostman.com/view/5066472/SWE57ywE?version=latest#36093d14-bbd8-403c-b23f-5eed0f8548e1
