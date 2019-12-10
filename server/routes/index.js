@@ -28,6 +28,24 @@ export default (app) => {
      */
     app.get('/api/tasks/listbyboard/:boardId', Tasks.listByBoardID);
 
+    
+    /**
+     * @swagger
+     * path:
+     *  /boards/:
+     *    get:
+     *      summary: Get details of especif boardID
+     *      tags: [Boards]
+     *      responses:
+     *        "200":
+     *          description: Details of Board
+     *          content:
+     *            application/json:
+     *              schema:
+     *                $ref: '#/components/schemas/Task'
+     */
+    app.get('/api/boards/:boardId', Boards.listByID);
+
 
     app.post('/api/boards', Boards.signUp);
 

@@ -20,6 +20,17 @@ class Boards {
       .findAll()
       .then(boards => res.status(200).send(boards));
   }
+
+  static listByID(req, res) {
+    const { boardId } = req.params
+    return Board
+      .findAll({
+        where: {
+          id: boardId
+        }
+      })
+      .then(boards => res.status(200).send(boards));
+  }
 }
 
 export default Boards;
