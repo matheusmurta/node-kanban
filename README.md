@@ -33,18 +33,42 @@ these features are not yet available, check issues yet
 
 ## Boards
 ```
+GET http://127.0.0.1:3001/api/boards
+Lista todos dos boards 
+
+
+POST 
+http://127.0.0.1:3000/api/boards
+{
+  "name": "Meu primeiro Board"
+}
+
 http://127.0.0.1:3000/api/boards/1/tasks
 LISTAR TODAS http://127.0.0.1:3000/api/boards
 LISTAR TODAS BASEADA NA listbyboard http://127.0.0.1:3001/api/tasks/listbyboard/1
 ```
 ## Tasks 
 ```
-LISTAR TODAS http://127.0.0.1:3001/api/tasks/
-DELETAR http://127.0.0.1:3000/api/tasks/6
-ATULIZAR http://127.0.0.1:3000/api/tasks/6
+LISTAR TODAS http://127.0.0.1:3001/api/tasks/ 
+LISTAR TODAS Por BoardID http://127.0.0.1:3001/api/tasks/listbyboard/{BoardID}
+
+DELETAR http://127.0.0.1:3000/api/tasks/{taskID}
+ATUALIZAR http://127.0.0.1:3000/api/tasks/{taskID}
+{
+  "name": "Protipagem",
+  "description": "Prototipo de baixa fidelidade.",
+  "project_stage": 1
+ }
+ 
 INSERIR http://127.0.0.1:3000/api/boards/1/tasks
+ {
+  "name": "Protipagem",
+  "description": "Prototipo de baixa fidelidade.",
+  "project_stage": 1
+ }
 ```
 
+ 
 
 
 
