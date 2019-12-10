@@ -12,7 +12,7 @@ npm install
 sequelize db:migrate
 npm start 
 ```
-### 3 - you can get there quickly if it works by going to http://localhost:3001/ and seeing this message
+### 3 - you can check there quickly if it works by going to http://localhost:3001/ and seeing this message
 ```sh
 {"message":"Kanban App"}
 ```
