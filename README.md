@@ -17,7 +17,7 @@ npm start
 {"message":"Kanban App"}
 ```
 
-### 4 - After run project locally you can check the Docs Api for more details  
+### 4 - After run project locally you can check the Docs Api by Generate by Swagger Documentation
 http://localhost:3001/docs/
 
 ### 5 Now just Run the Front End App
