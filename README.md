@@ -28,3 +28,24 @@ https://documenter.getpostman.com/view/5066472/SWE57ywE?version=latest#36093d14-
 
 ### Notes : 
 these features are not yet available, check issues yet
+
+### Mini Guia da api
+
+## Boards
+```
+http://127.0.0.1:3000/api/boards/1/tasks
+LISTAR TODAS http://127.0.0.1:3000/api/boards
+LISTAR TODAS BASEADA NA listbyboard http://127.0.0.1:3001/api/tasks/listbyboard/1
+```
+## Tasks 
+```
+LISTAR TODAS http://127.0.0.1:3001/api/tasks/
+DELETAR http://127.0.0.1:3000/api/tasks/6
+ATULIZAR http://127.0.0.1:3000/api/tasks/6
+INSERIR http://127.0.0.1:3000/api/boards/1/tasks
+```
+
+
+
+
+
