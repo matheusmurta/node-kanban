@@ -9,8 +9,9 @@ git clone https://github.com/matheusmurta/node-kanban.git
 ### 1 - Create postgres database with command or create using PgAdmin 
 createdb kanban
 
-### Please please set according to your password and database user !
-node-kanban\server\config\config.json
+### 1.1 Please please set this configs according to your password and database user !
+Ex: 
+C:\Users\MatheusPC\Desktop\desafio\node-kanban\server\config\config.json
 
 ```
 "development": {
