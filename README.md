@@ -27,7 +27,7 @@ https://github.com/matheusmurta/react-kanban
 https://documenter.getpostman.com/view/5066472/SWE57ywE?version=latest#36093d14-bbd8-403c-b23f-5eed0f8548e1
 
 ### Notes : 
-these features are not yet available, check issues yet
+Some features are not yet available, check issues yet
 
 ### Mini Guia da api
 
