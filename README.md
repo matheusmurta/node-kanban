@@ -7,9 +7,12 @@ This application required, Node.js and PostgreSQL.
 createdb kanban
 
 ### 2 - Run in project folder 
+```sh
 npm install
 sequelize db:migrate
 npm start 
+```
+
 
 ### 3 - After run project locally you can check the Docs Api for more details  
 http://localhost:3001/docs/
