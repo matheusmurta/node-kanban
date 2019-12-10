@@ -9,6 +9,20 @@ git clone https://github.com/matheusmurta/node-kanban.git
 ### 1 - Create postgres database with command or create using PgAdmin 
 createdb kanban
 
+### Please please set according to your password and database user !
+node-kanban\server\config\config.json
+
+```
+"development": {
+    "username": "postgres",
+    "password": "123456",
+    "database": "kanban",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+```
+
 ### 2 - Run in project folder 
 ```sh
 npm install
@@ -37,14 +51,12 @@ Some features are not yet available, check issues yet
 GET http://127.0.0.1:3001/api/boards
 Lista todos dos boards 
 
-
 POST 
 http://127.0.0.1:3000/api/boards
 {
   "name": "Meu primeiro Board"
 }
 
-http://127.0.0.1:3000/api/boards/1/tasks
 LISTAR TODAS http://127.0.0.1:3000/api/boards
 LISTAR TODAS BASEADA NA listbyboard http://127.0.0.1:3001/api/tasks/listbyboard/1
 ```
