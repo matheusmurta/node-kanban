@@ -23,7 +23,7 @@ npm start
 ### 4 - After run project locally you can check the Docs Api by Generate by Swagger Documentation
 http://localhost:3001/docs/
 
-### 5 Now just Run the Front End App
+### 5 Now Setup/Run the Front End App
 https://github.com/matheusmurta/react-kanban
 
 
