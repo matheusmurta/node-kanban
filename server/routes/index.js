@@ -82,7 +82,7 @@ export default (app) => {
      *          content:
      *            application/json:
      *              schema:
-     *                $ref: '#/components/schemas/Task'
+     *                $ref: '#/components/schemas/Board'
      */
     app.get('/api/boards', Boards.list);
 
