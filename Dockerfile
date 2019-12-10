@@ -6,6 +6,6 @@ COPY package*.json ./
 
 COPY . .
 
-EXPOSE 3000
+EXPOSE 3001
 
 ENTRYPOINT [ "./entrypoint.sh" ]

@@ -12,7 +12,7 @@ sequelize db:migrate
 npm start 
 
 ### 3 - After run project locally you can check the Docs Api for more details  
-http://localhost:3000/docs/
+http://localhost:3001/docs/
 
 ### Or use Quick postman Docs
 https://documenter.getpostman.com/view/5066472/SWE57ywE?version=latest#36093d14-bbd8-403c-b23f-5eed0f8548e1

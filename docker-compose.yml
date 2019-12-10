@@ -16,7 +16,7 @@ services:
     entrypoint: ["/bin/bash", "./entrypoint.sh"]
     image: node:13.2.0
     ports:
-      - "3000:3000"
+      - "3001:3001"
     volumes:
       - .:/node-kanban
     environment:
